@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html lang="pl_PL"> 
+<head> 
+<title>Bistro na Woli - Strona Bootstrap 4 i CSS 3</title>
+<meta name="description" content="Najlepsza Pizza w Mieście. Spróbuj już dzisiaj naszych przysmaków, które sprawią że będziesz odwiedzać nas w każdej wolnej chwili.">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</head>
+<body>
+	<nav class="top-nav navbar fixed-top navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html"><img alt="dobra pizzeria wola" src="./img/newlogo.png"class="logo-brand-left"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" id="menu-link-active" href="index.html">home</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" id="menu-link" href="o-nas.html">o nas</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="menu-link" href="menu.html">menu</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" id="menu-link" href="galeria.html">galeria</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" id="menu-link" href="kontakt.html">kontakt</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+	<header>
+		<div class="container-fluid desktop-header">
+			<div class="row text-center">
+				<div class="col-1 col-md-1">
+					<div class="icon-header">
+						<i class="material-icons">phone_iphone</i>
+					</div>
+				</div>
+				<div class="col-3 col-md-2">
+					<div id="phone-contact">
+						<p>+48 22 987 65 43</p>
+						<p>pn - nd: 06:00 - 20:00</p>
+					</div>
+				</div>
+				<div class="col-4 col-md-6">
+					<div id="brand">
+						<a href="index.html"><img alt="dobra pizzeria wola" src="./img/newlogo.png"class="logo-brand"></a>
+					</div>
+				</div>
+				<div class="col-3 col-md-2">
+					<div id="phone-contact">
+						<p>Górczewska 1</p>
+						<p>pn - nd: 09:00 - 21:00</p>
+					</div>
+				</div>
+				<div class="col-1 col-md-1">
+					<div class="icon-header">
+						<i class="material-icons">location_on</i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<ul class="navbar-nav mx-auto">
+			  <li class="nav-item">
+				<a class="nav-link" id="menu-link-active" href="index.html">home</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" id="menu-link" href="o-nas.html">o nas</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" id="menu-link" href="menu.html">menu</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" id="menu-link" href="galeria.html">galeria</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" id="menu-link" href="kontakt.html">kontakt</a>
+			  </li>
+			</ul>
+		</nav>
+	</header>
+	<section class="main-slider">
+		<div class="col-sm-12">
+			<div class="slider">
+				<div class="container">
+					<div class="row text-center sliders" id="slide-1">
+						<div class="col-12 col-sm-6">
+							<p class="slider-biggest">Najlepsza Pizza w Mieście</p>
+							<p class="slider-smaller">Spróbuj już dzisiaj naszych przysmaków, które sprawią że będziesz odwiedzać nas w każdej wolnej chwili.</p>
+							<a href="menu.html"><div class="slider-button">
+								<p>Przejdź do menu</p>
+							</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6">
+							<img alt="pizzeria warszawa wola" class="slider-img"id="pizza-img-1" src="./img/pizza2.jpg">
+						</div>
+					</div>
+					<div class="row text-center sliders" id="slide-2">
+						<div class="col-sm-12">
+							<p class="slider-biggest">Burgery</p>
+							<p class="slider-smaller">Burgery</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="offer">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-12 col-md-4 offer-service">
+					<i id="offer-icon" class="material-icons">room_service</i>
+					<h3>Wysoka jakość</h3>
+					<p>Zadowolenie naszych klientów jest dla nas priorytem. Dlatego zwracamy szczególną uwagę na jakość potraw jakie serwujemy naszym klientów.</p>
+				</div>
+				<div class="col-sm-12 col-md-4 offer-service">
+					<i id="offer-icon" class="material-icons">local_shipping</i>
+					<h3>Szybka dostawa</h3>
+					<p>Mamy świadomość, że nikt nie lubi zimnego jedzenia. W związku z tym wyróżnia nas szybka dostawa, która umożliwia spożycie ciepłych potraw.</p>
+				</div>
+				<div class="col-sm-12 col-md-4 offer-service">
+					<i id="offer-icon" class="material-icons">local_dining</i>
+					<h3>Smaczne i tanio</h3>
+					<p>To połączenie, które wydawać się niemożliwe a jednak udało nam się osiągnąć sukces, dzięki któremu nasi klienci chwalą jedzenie w dobrej cenie.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="story">
+			<div class="row no-gutters w-100">
+				<div class="col-lg-4">
+					<img alt="historia" class="img-story" src="./img/bar-401546_1280-1.jpg">
+				</div>
+				<div class="col-lg-4 text-center">
+					<div class="story-box">
+					<h3 class="section-heading">Nasza historia</h3>
+					<p>My nie tworzymy jedzenia. My tworzymy wspomnienia i wyjątkowe chwile, którym towarzyszą różne dobre smaki.</p>
+					<p>Ponad 10 lat naszej działalności pozwoliło nam stworzyć miejsce, w którym każdego dnia znajdziesz spokój i chwilę wytchnienia. Stale udoskonalane przepisy i kompozycje smakowe sprawiają, że nasza restauracja jest miejscem, które zamieszka w Twoich wspomnieniach. Wszystko po to, żeby móc cieszyć i sprawiać przyjemność.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<img alt="nasz lokal" class="img-story"src="./img/restaurant-2602736_1280-1.jpg">
+				</div>
+				</div>
+	</section>
+	<section class="sales">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-12">
+				<h1 class="section-heading">Nasze propozycje w menu</h1>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3 zoom-img-box">
+				<a href="menu.html" class="menu-option">
+				<div class="menu-offer-box">
+					<img alt="pizza"id="sales-img" src="./img/pizza4.jpg">
+					<h4>Pizza</h4>
+					<p>Dobra pizza w gronie przyjaciół to dobre uzupełnienie wspólnych chwil. Na pewno nie wyjdziesz od nas głodny.</p>
+				</div>
+				</a>
+				</div>
+				<div class="col-md-3 zoom-img-box">
+				<a href="menu.html" class="menu-option">
+				<div class="menu-offer-box">
+					<img alt="burgery" id="sales-img" src="./img/burger6.jpg">
+					<h4>Burgery</h4>
+					<p>Coś w sam raz dla prawdziwych twardzieli, jak i zwykłych sympatyków prawdziwego wołowiny.</p>
+				</div>
+				</a>
+				</div>
+				<div class="col-md-3 zoom-img-box">
+				<a href="menu.html" class="menu-option">
+				<div class="menu-offer-box">
+					<img alt="desery" id="sales-img" src="./img/dessert4.jpg">
+					<h4>Desery</h4>
+					<p>Odrobina słodkości podczas spotkania ? Czemu nie, każdy smakosz z pewnością znajdzie coś dla siebie.</p>
+				</div>
+				</a>
+				</div>
+				<div class="col-md-3 zoom-img-box">
+				<a href="menu.html" class="menu-option">
+				<div class="menu-offer-box">
+					<img alt="napoje" id="sales-img" src="./img/drinks4.jpg">
+					<h4>Napoje</h4>
+					<p>Małe piwko po pracy ? A może kawa na początek dnia ? Spróbuj, a nie pożałujesz i będziesz odwiedzać nas codziennie..</p>
+				</div>
+				</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="legend">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-12">
+					<h2 class="section-heading">Mówią o nas</h2>
+					</div>
+				</div>
+		<div class="comments"id="comment1">
+				<div class="row text-center">
+					<div class="col-sm-6">
+						<img alt="opinia-1" id="avatar-img" src="./img/avatar1.jpg">
+						</div>
+					<div class="col-sm-6">
+						<h4>Roman Bloczek</h4>
+						<p class="biggest">Fajnie miejsce z ciekawym klimatem, w sam raz żeby wyskoczyć na piwko po pracy. Do tego dobre jedzenie w przystępnej cenie jak na lokal w Warszawie.</p>
+					</div>
+				</div>
+			</div>
+		<div class="comments"id="comment2">
+				<div class="row text-center">
+					<div class="col-sm-6">
+						<img alt="opinia-2" id="avatar-img" src="./img/avatar2.jpg">
+						</div>
+					<div class="col-sm-6">
+						<h4>Agata Gałązka</h4>
+						<p class="biggest">Wpadłyśmy z koleżankami do tego lokalu napić się kawy i pogadać. Przyznaję,że lepszej kawy nie piłam i do tego pyszne słodkości, które umiliły nam wspólne chwile. Polecam !</p>
+					</div>
+				</div>
+			</div>
+		<div class="comments"id="comment3">
+				<div class="row text-center">
+					<div class="col-sm-6">
+						<img alt="opinia-3" id="avatar-img" src="./img/avatar3.jpg">
+						</div>
+					<div class="col-sm-6">
+						<h4>Monika Paleciak</h4>
+						<p class="biggest">Byłam ostatnio w tym bistro i to co mnie ujęło to wyjątkowy klimat, który pasuje zarówno do integracji z pracownikami jak i do spotkania ze znajomymi. Akurat wyskoczyliśmy z zespołem się pointegrować i coś przekąsić. Ceny też niczego sobie ponieważ zamówiliśmy pizzę i burgery, które były super.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="scroll-btn">
+		<a href="/"><i class="fa fa-angle-up"></i></a>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-12">			
+					<p>Restaurant Bistro 2019</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
