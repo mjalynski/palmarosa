@@ -141,16 +141,6 @@ font-weight:bold;
     background-size: 100%;
 	background-attachment:fixed;
 }
-.left-movement{
-	position: relative;
-	font-family: 'Roboto Condensed', sans-serif;
-	text-transform:uppercase;
-	font-weight:bold;
-	-webkit-animation-name: move-from-left; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-  animation-name: move-from-left;
-  animation-duration: 2s;
-}
 .menu-offer-link a{
     color: #fff;
 	text-transform:uppercase;
@@ -589,25 +579,9 @@ height:100%;
 .scroll-btn a,.scroll-btn a:hover{
 	color:#333;
 }
-/* DAĆ RESPOSNYWNE ANIMACJE BO DZIAŁA TYLKO NA DESKTOPACH */
-
-
-
-
-
-
-/* Safari 4.0 - 8.0 */
 @-webkit-keyframes showing {
 	0%   {opacity:0;}
 	100%  {opacity:1;}
-}
-@-webkit-keyframes move-bottom {
-	0%   {top:-1em;}
-	100%  {top:2em;}
-}
-@-webkit-keyframes move-top {
-	0%   {top:8em;}
-	100%  {top:4em;}
 }
 @webkit-keyframes background-color{
 	0%   {background:#0d0f11;}
@@ -629,22 +603,10 @@ height:100%;
 	0%   {border-color:#0d0f11;}
 	100%  {border-color:#fff;}
 }
-@-webkit-keyframes move-from-left {
-  0%   {left:-1000px; top:0px;}
-  100% {left:0px; top:0px;}
-}
 /* Standard syntax */
 @keyframes showing {
 	0%   {opacity:0;}
 	100%  {opacity:1;}
-}
-@keyframes move-bottom {
-	0%   {top:-1em;}
-	100%  {top:2em;}
-}
-@keyframes move-top {
-	0%   {top:8em;}
-	100%  {top:4em;}
 }
 @keyframes background-color{
 	0%   {background:#0d0f11;}
@@ -665,10 +627,6 @@ height:100%;
 @keyframes menu-bordered{
 	0%   {border-color:#0d0f11;}
 	100%  {border-color:#fff;}
-}
-@keyframes move-from-left {
-  0%   {left:-1000px; top:0px;}
-  100% {left:0px; top:0px;}
 }
 @-webkit-keyframes rotate-pizza{
 	0%   {
