@@ -141,16 +141,46 @@ window.onload = function(){
 	setInterval(slider, 100);
 }
 //licznik wydanych posilkow
-function counterload() {
-	setInterval(function(){ document.getElementById("counter-dinner").innerHTML = counter1(); }, 1);
-	setInterval(function(){ document.getElementById("counter-client").innerHTML = counter2(); }, 15);
-	setInterval(function(){ document.getElementById("counter-year").innerHTML = counter3(); }, 150);
-}
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+	var mobile_vertical = window.matchMedia("(min-width: 320px)");
+	var mobile_horizontal = window.matchMedia("(min-width: 640px)");
+	var tablet = window.matchMedia("(min-width: 768px)");
+	var desktop = window.matchMedia("(min-width: 1200px)");
+	if(mobile_vertical.matches) {
+		if (scroll >= 1900) {
+			setInterval(function(){ document.getElementById("counter-dinner").innerHTML = counter1(); }, 1);
+			setInterval(function(){ document.getElementById("counter-client").innerHTML = counter2(); }, 50);
+			setInterval(function(){ document.getElementById("counter-year").innerHTML = counter3(); }, 500);
+		}
+	}
+	if(mobile_horizontal.matches) {
+		if (scroll >= 1600) {
+			setInterval(function(){ document.getElementById("counter-dinner").innerHTML = counter1(); }, 10);
+			setInterval(function(){ document.getElementById("counter-client").innerHTML = counter2(); }, 50);
+			setInterval(function(){ document.getElementById("counter-year").innerHTML = counter3(); }, 500);
+		}
+	}
+	if(tablet.matches) {
+		if (scroll >= 1200) {
+			setInterval(function(){ document.getElementById("counter-dinner").innerHTML = counter1(); }, 10);
+			setInterval(function(){ document.getElementById("counter-client").innerHTML = counter2(); }, 50);
+			setInterval(function(){ document.getElementById("counter-year").innerHTML = counter3(); }, 500);
+		}
+	}
+	if(desktop.matches) {
+		if (scroll >= 1000) {
+			setInterval(function(){ document.getElementById("counter-dinner").innerHTML = counter1(); }, 10);
+			setInterval(function(){ document.getElementById("counter-client").innerHTML = counter2(); }, 50);
+			setInterval(function(){ document.getElementById("counter-year").innerHTML = counter3(); }, 500);
+		}
+	}
+});
 var counter1 = (function () {
 	var dinner = 0;
 	return function () {
 		if(dinner<15000){
-			dinner += 100;
+			dinner += 10;
 		} 
 		return dinner;
 	}
