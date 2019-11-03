@@ -41,25 +41,23 @@ letter-spacing:1px;
 .nav-item.active:hover{
 	animation-name: menu-bordered;
     -webkit-animation-name: menu-bordered;
-
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
-
-
      animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 }
-.nav-item.active:hover >#menu-link{
-color:#ffc147;
-}
+
 .nav-item {
 	color:#fff;
 	text-align:center;
 	padding:5px;
 	border:1px solid #fff;
 }
-.nav-item >#menu-link-active{
-	color:#ffc147;
+.navbar-dark .navbar-nav a.nav-link {
+    color:#ffc147;
+}
+.navbar-dark .navbar-nav a.nav-link:hover {
+    color:#ffc147;
 }
 header, .main-slider, .sales, .newsletter, .offers, .footer{
 	background:#0d0f11;
@@ -168,7 +166,7 @@ font-weight:bold;
 #comment2,#comment3{
 	display:none;
 }
-#avatar-img{
+.avatar-img{
 border-radius:25px;
 width:35%;
 }
@@ -176,12 +174,12 @@ width:35%;
     font-size: 70px;
 }
 
-#sales-img{
+.sales-img{
 	width:70%;
 	border:2px solid trasparent;
 	border-radius:150px;
 }
-/*#sales-img:hover{
+/*.sales-img:hover{
 	width:80%;
 }*/
 ul.row.text-center{
@@ -250,7 +248,7 @@ margin-left: -15px;
 .take-dinner{
 	padding:30px 0px;
 }
-#offer-icon{
+.material-icons.offer-icon{
 	font-size:90px;
 }
 .story-box{
@@ -695,7 +693,7 @@ height:100%;
 		padding:10px;
 		background-size:cover;
 	}
-	#sales-img {
+	.sales-img {
 		width: 40%;
 	}
 	.menu-offer-box {
@@ -749,7 +747,7 @@ height:100%;
 	.logo-brand-left{
 		width: 30%;
 	}
-	#sales-img {
+	.sales-img {
 		width: 100%;
 	}
 }
