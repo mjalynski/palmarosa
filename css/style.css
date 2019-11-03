@@ -23,7 +23,16 @@ background:#0d0f11;
 text-transform:uppercase;
 letter-spacing:1px;
 }
-
+.phone-number {
+    display: block;
+    text-decoration: none;
+    color:#fff;
+}
+.phone-number:hover {
+    display: block;
+    text-decoration: none;
+    color:#fff;
+}
 .nav-item.active{
 	text-align:center;
 	padding:5px;
@@ -141,12 +150,15 @@ font-weight:bold;
     background-size: 100%;
 	background-attachment:fixed;
 }
+.menu-offer-link{
+	border: 1px solid #fff;	
+}
 .menu-offer-link a{
     color: #fff;
 	text-transform:uppercase;
 }
 .menu-offer-link a:hover{
-	color:#e8ae3e;
+	color:#fff;
 	text-decoration:none;
 }
 .legend{
@@ -200,18 +212,16 @@ margin-left: -15px;
 	color:#fff;
 	text-decoration: none;
 }
-.row .text-center.sales-menu{
-	padding:0px 40px;	
+.row.text-center.sales-menu{
+	padding: 0px 20px;
 }
 .menu-offer-link{
 	padding:15px 0px;
-	border:1px solid transparent;
 }
 .menu-offer-link:hover{
-	color:#e8ae3e;
 	text-decoration:none;
-	animation-name: menu-bordered;
-    -webkit-animation-name: menu-bordered;
+	animation-name: background-color;
+    -webkit-animation-name: background-color;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
      animation-fill-mode: forwards;
@@ -258,7 +268,7 @@ margin-left: -15px;
 	height:100%;
 }
 .contact-input{
-		font-size:17px;
+	font-size:17px;
 	background:transparent;
 	color:#23282d;
 	border:2px solid #23282d;
@@ -269,7 +279,18 @@ margin-left: -15px;
 	color:#23282d;
 	opacity: 1;
 }
-
+.font-dark-number{
+    display: block;
+    text-decoration: none;
+	color:#23282d;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.font-dark-number:hover {
+    display: block;
+    text-decoration: none;
+	color:#23282d;
+	font-family: 'Roboto Condensed', sans-serif;
+}
 .container-iframe{
     position: relative;
     width: 100%;
@@ -708,6 +729,9 @@ height:100%;
 	}
 	.we-offer{
 		margin: 15px 0px;
+	}
+	.scroll-btn{
+		display:none;
 	}
 }
 @media(min-width: 320px) and (max-width: 768px)  {
